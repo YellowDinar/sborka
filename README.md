@@ -3,7 +3,7 @@
 Шаблоны:
 - Forefront
 
-Плагин:
+Плагины:
 - Cyr-To-Lat
 - HTML in Category Descriptions
 - Huge IT Slider
@@ -12,3 +12,5 @@
 - WooCommerce Checkout Manager
 - WP Header Footer
 - Yoast SEO
+
+База Данных: нужно импортировать sborka.zip через phpmyadmin.
