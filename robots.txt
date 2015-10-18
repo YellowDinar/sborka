@@ -1,2 +1,3 @@
 User-Agent: *
 Disallow: /
+Host: sborka.aaccent.su
