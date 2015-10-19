@@ -14,6 +14,13 @@
   $feedback_success = "Спасибо! Письмо успешно отправлено.";  // Текст выводимый при успешной отправке
   $feedback_style = "default";                                // Тема для формы ("default", "glass"), false - нет темы
 
+/**
+   * Форма на ГЛАВНОЙ "Обратная связь"
+   */
+  $feedback_full_email = "dinar@aaccent.ru";                   // Адрес вашей почты
+  $feedback_full_success = "Спасибо! Письмо успешно отправлено.";  // Текст выводимый при успешной отправке
+  $feedback_full_style = "default";                                // Тема для формы ("default", "glass"), false - нет темы
+
 
 
   /********************************************************
@@ -203,15 +210,6 @@
         "validate" => array(
           "required",
           "email"
-        )
-      ),
-      "file" => array(
-        "type" => "file",
-        "alias" => "Файл",
-        "label" => "Прикрепить документ или изображение",
-        "validate" => array(
-          "max" => 1024,
-          "formats" => array("jpg", "png", "doc", "txt")
         )
       ),
       "message" => array(

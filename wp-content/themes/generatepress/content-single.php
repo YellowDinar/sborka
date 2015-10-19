@@ -8,7 +8,7 @@
 	<div class="inside-article">
 		<?php do_action( 'generate_before_content'); ?>
 		<header class="entry-header">
-			<?php the_title( '<n1 class="entry-title" itemprop="headline">', '</n1>' ); ?>
+			
 			<div class="entry-meta">
 				<?php generate_posted_on(); ?>
 			</div><!-- .entry-meta -->

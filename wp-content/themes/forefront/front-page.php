@@ -11,8 +11,6 @@
  */
 
 get_header(); ?>
-
-<?php echo do_shortcode("[huge_it_slider id='1']"); ?>
 	<div id="primary" <?php generate_content_class();?>>
 		<main id="main" <?php generate_main_class(); ?> itemprop="mainContentOfPage" role="main">
 			<?php do_action('generate_before_main_content'); ?>
@@ -34,5 +32,7 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php 
-do_action('generate_sidebars');
+do_action('generate_sidebars'); ?>
+<?php
 get_footer();
+?>

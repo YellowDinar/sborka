@@ -60,7 +60,6 @@ dd {
 }
 
 .aacc {
-    float: right;
     background: url("http://www.aaccent.ru/pics/logo_small.png") 0 5px no-repeat !important;
     height: 34px !important;
     display: inline-block !important;
@@ -71,7 +70,316 @@ dd {
 }
 
 .smenu {
-    float: left;
-    margin-left: -20px;
     margin-top: 6px;
+}
+
+.inside-header {
+    padding-top: 7px !important;
+    padding-right: 40px !important;
+    padding-bottom: 2px !important;
+    padding-left: 40px !important;
+}
+
+.site-branding {
+    width: 34%;
+}
+
+.header-widget {
+    max-width: 66% !important;
+    width: 66%;
+    padding: 15px 0 9px 0;
+    font-size: 17px;
+}
+
+.header-widget .widget {
+    padding: 0 0 0px !important;
+}
+aside#text-3 {
+    display: block;
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+aside#text-3 ul {
+    display: inline-block;
+    text-align: left;
+}
+
+aside#text-3 ul a {
+    text-decoration: underline;
+}
+
+aside#text-3 ul a:hover {
+    text-decoration: none;
+}
+
+aside#text-2 {
+    display: block;
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+aside#text-2 ul > li:first-child {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 3px;
+}
+
+aside#text-2 ul > li > a {
+    background: transparent;
+    border: 2px solid;
+    color: #D33232;
+    border-radius: 3px;
+    font-size: 17px;
+    padding: 5px 21px;
+    text-decoration: none;
+    margin-top: 6px;
+    display: inline-block;
+}
+
+aside#text-2 ul > li > a:hover {
+    background: #D33232;
+    color: white;
+    border: 2px solid #D33232;
+}
+ 
+.separate-containers .widget {
+    padding: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+#question_form .wwFormFieldContainer  {
+    width: 250px;
+}
+
+#question_form .wwFormFieldType_textarea {
+    display: inline-block;
+    float: right;
+    margin-top: -154px;
+}
+
+#question_form .wwFormFieldType_textarea textarea {
+    height: 154px;
+}
+
+#question_form .wwFormSubmit input[type=submit] {
+    background-color: rgb(211, 50, 50) !important;
+    height: 60px;
+}
+
+.footer-widgets .widget-title {
+    display: inline-block;
+    padding-bottom: 0;
+    margin-bottom: 11px;
+    border-bottom: 0px !important;
+}
+
+#text-6 {
+    margin-top: 62px;
+    text-align: center;
+}
+#krugi .krug {
+    width: 150px;
+    height: 150px;
+    background: black;
+    -moz-border-radius: 90px;
+    -webkit-border-radius: 90px;
+    border-radius: 90px;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+}
+
+#krugi .krug > span {
+    display: inline-block;
+}
+
+#krugi .info {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#krugi .krug #first_krug {
+    padding: 14px 0;
+    font-size: 85px;
+}
+
+#krugi .krug #second_krug {
+    font-size: 51px;
+    padding: 41px 0;
+}
+
+#krugi .krug #third_krug {
+    padding: 14px 0;
+    font-size: 85px;
+}
+
+.site-info {
+    padding-bottom: 15px;
+}
+
+.site-info .ww_form_window {
+    background: #fff;
+    border: 2px solid white;
+    color: #D33232 !important;
+    border-radius: 3px;
+    font-size: 22px;
+    padding: 8px 22px;
+    text-decoration: none;
+}
+
+.site-info .ww_form_window:hover {
+    background: #A71313;
+    color: white !important;
+    border: 2px solid #A71313;
+}
+
+/* ------------- Контейнер с адаптивными блоками------------- */
+.masonry {
+    margin: 1.5em 0;
+    padding: 0;
+    column-gap: 1.5em; /* Общее расстояние между колонками */
+    font-size: .85em;
+    -moz-column-gap: 1.5em; /* Расстояние между колонками для Firefox */
+    -webkit-column-gap: 1.5em; /* Расстояние между колонками  для Safari, Chrome и iOS */
+}
+ 
+/* Элементы в виде плиток с содержанием */
+.item {
+    display: inline-block;
+    background: #EAEAEA;
+    padding: 1em;
+    margin: 0 0 1.5em;
+    width: 100%;
+    box-sizing: border-box; /* Изменения алгоритма расчета ширины и высоты элемента.*/
+    -moz-box-sizing: border-box; /* Для Firefox */ 
+    -webkit-box-sizing: border-box; /* Для Safari, Chrome, iOS иAndroid */ 
+    box-shadow: 2px 2px 4px 0 #ccc; /* Внешняя тень плиток */
+}
+ 
+/* Стили картинок, видое и фреймов внутри адаптивных плиток */
+img, iframe {
+max-width: 100%;
+height: auto;
+display: block;
+}
+ 
+/* Стили ссылок внутри плиток */
+.item a {
+text-decoration: none;
+color: #359CC6;
+margin: 0 10px;
+}
+ 
+/* Стили ссылок при наведении */
+.item a:hover {
+color: #E88F00;    
+border-bottom: 1px dotted #9F1D35;
+}
+ 
+/* Медиа-запросы для различных размеров адаптивного макета */
+@media only screen and (min-width: 400px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+ 
+@media only screen and (min-width: 700px) {
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+ 
+@media only screen and (min-width: 900px) {
+    .masonry {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+ 
+@media only screen and (min-width: 1100px) {
+    .masonry {
+        -moz-column-count: 5;
+        -webkit-column-count: 5;
+        column-count: 5;
+    }
+}
+ 
+@media only screen and (min-width: 1280px) {
+    .wrapper {
+        width: 1260px;
+    }
+}
+
+blockquote {
+    border-left: 7px solid rgba(255, 0, 0, 0.5);
+    padding: 20px;
+    font-style: italic;
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.zag {
+    text-align: left;
+    padding-bottom: 0 !important;
+}
+
+#owl-demo {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#owl-demo img {
+	display: inline-block;
+}
+
+#owl-demo p {
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#owl-demo .item{
+  background: #a1def8;
+  padding: 30px 0px;
+  display: block;
+  margin: 5px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#owl-demo .owl-item {
+    margin: 0 11px;
+    width: 250px !important;
+}
+
+.site-logo img {
+	max-width: 120px;
+}
+
+#content {
+    padding-top: 6px;
+}
+
+.widget ul li {
+    list-style-type: none;
+    position: relative;
+    padding-bottom: 10px;
 }

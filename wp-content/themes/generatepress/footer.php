@@ -7,8 +7,82 @@
  * @package GeneratePress
  */
 ?>
-
 	</div><!-- #content -->
+
+<?php if (is_front_page()){ ?>
+		
+
+<div style="    margin-top: -80px;" class="zag site-content"><blockquote>Услуги</blockquote></div>
+<!-- Контейнер с адаптиными блоками -->
+<div class="masonry site-content">
+    <!-- Адаптивные блоки с содержанием -->
+   <div class="item">
+       <img src="http://placehold.it/350x200">
+           <br>Здесь размещаете краткий анонс статьи, описание товара, картинки или видео... <a href="ссылка на полную запись">Подробнее »</a>
+    </div>
+ 
+   <div class="item">
+       <img src="http://placehold.it/250x250">
+           <br>Здесь размещаете краткий анонс статьи, описание товара, картинки или видео... <a href="ссылка на полную запись">Подробнее »</a>
+    </div>
+ 
+   <div class="item">
+       <img src="http://placehold.it/470x320">
+           <br>Здесь размещаете краткий анонс статьи, описание товара, картинки или видео... <a href="ссылка на полную запись">Подробнее »</a>
+    </div>
+ 
+   <div class="item">
+       <img src="http://placehold.it/250x150">
+           <br>Здесь размещаете краткий анонс статьи, описание товара, картинки или видео... <a href="ссылка на полную запись">Подробнее »</a>
+    </div>
+ 
+   <div class="item">
+       <img src="http://placehold.it/300x250">
+           <br>Здесь размещаете краткий анонс статьи, описание товара, картинки или видео... <a href="ссылка на полную запись">Подробнее »</a>
+    </div>
+ 
+   <div class="item">
+       <img src="http://placehold.it/450x300">
+           <br>Здесь размещаете краткий анонс статьи, описание товара, картинки или видео... <a href="ссылка на полную запись">Подробнее »</a>
+    </div>
+ 
+    <div class="item">
+       <img src="http://placehold.it/250x200">
+           <br>Здесь размещаете краткий анонс статьи, описание товара, картинки или видео... <a href="ссылка на полную запись">Подробнее »</a>
+    </div>
+ 
+   <div class="item">
+       <img src="http://placehold.it/250x150">
+           <br>Здесь размещаете краткий анонс статьи, описание товара, картинки или видео... <a href="ссылка на полную запись">Подробнее »</a>
+    </div>
+ 
+    <div class="item">
+       <img src="http://placehold.it/280x190">
+           <br>Здесь размещаете краткий анонс статьи, описание товара, картинки или видео... <a href="ссылка на полную запись">Подробнее »</a>
+    </div>
+ 
+    <div class="item">
+       <img src="http://placehold.it/500x400">
+           <br>Здесь размещаете краткий анонс статьи, описание товара, картинки или видео... <a href="ссылка на полную запись">Подробнее »</a>
+    </div>
+    <!-- Конец адаптивных блоков с содержанием -->
+ 
+</div>
+    <!-- Конец контейнера с адаптивными блоками -->
+
+
+
+<div class="zag site-content"><blockquote>Партнеры</blockquote></div>
+<div class="site-content">
+<div id="owl-demo" class="owl-carousel">
+</div>
+</div>
+
+
+<?php } ?>
+
+
+
 </div><!-- #page -->
 <?php do_action('generate_before_footer'); ?>
 <div <?php generate_footer_class(); ?>>
@@ -107,12 +181,20 @@
 	?>
 	<footer class="site-info" itemtype="http://schema.org/WPFooter" itemscope="itemscope" role="contentinfo">
 		<div class="inside-site-info grid-container grid-parent">
-			<div class="smenu">
+<div class="row">
+<div class="aacc col-lg-3">
+                            <a href="http://www.aaccent.ru/sozdanie-saitov/" target="_blank">Создание сайтов</a>                    <br>и <a href="http://www.aaccent.ru/" target="_blank">продвижение сайтов Казань</a>
+                        </div>			
+<div class="foot_rec col-lg-3">
+				г.Казань, ул.Николая Ершова 35-А,
++7 (843) 272-72-99, +7 (843) 272-40-93
+ОАО "ВНИИУС" © 2013 - 2015
+			</div>
+			<div class="smenu col-lg-3">
                             <a href="/">Главная</a> | <a href="/cart/">Cart</a> | <a href="/shop/">Shop</a>
                         </div>
-			<div class="aacc">
-                            <a href="http://www.aaccent.ru/sozdanie-saitov/" target="_blank">Создание сайтов</a>                    <br>и <a href="http://www.aaccent.ru/" target="_blank">продвижение сайтов Казань</a>
-                        </div>
+<div class="col-lg-3" style="text-align: right;"><a href="#" class="ww_form_window" data-form="callback" data-type="popover" data-title="Заказ звонка">Заказать звонок</a></div>
+			
 		</div>
 	</footer><!-- .site-info -->
 	<?php do_action( 'generate_after_footer_content' ); ?>
@@ -124,5 +206,34 @@
 <script type="text/javascript" src="/web-widget/assets/web-widget.min.js"></script>
 <!-- Instances -->
 <script type="text/javascript" src="/web-widget/assets/instances.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+<script>
+$(document).ready(function() {
+ 
+  $("#owl-demo").owlCarousel({
+    items : 4,
+    jsonPath : '/data.json',
+    jsonSuccess : customDataSuccess
+  });
+ 
+  function customDataSuccess(data){
+    var content = "";
+    for(var i in data["items"]){
+       
+       var img = data["items"][i].img;
+       var alt = data["items"][i].alt;
+ 	console.log(content)
+       content += "<div><img src=\"" +img+ "\" alt=\"" +alt+ "\"><br><p>"+ alt +"</p></div>"
+    }
+    $("#owl-demo").html(content);
+  }
+ 
+ 
+});
+</script>
 </body>
 </html>

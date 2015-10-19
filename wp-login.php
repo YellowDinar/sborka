@@ -148,7 +148,6 @@ function login_header( $title = 'Log In', $message = '', $wp_error = '' ) {
 	?>
 	</head>
 	<body class="login <?php echo esc_attr( implode( ' ', $classes ) ); ?>">
-        <div style="height: 150px !important;" id="triangles"></div>
     <div id="login">
 		<h1><a href="<?php echo esc_url( $login_header_url ); ?>" title="<?php echo esc_attr( $login_header_title ); ?>" tabindex="-1"><?php bloginfo( 'name' ); ?></a></h1>
 	<?php
@@ -237,9 +236,6 @@ function login_footer($input_id = '') {
 	 */
 	do_action( 'login_footer' ); ?>
 	<div class="clear"></div>
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="http://www.aaccent.ru/templates/template1/scripts/raphael-min.js"></script>
-    <script src="http://www.aaccent.ru/templates/template1/scripts/ui.js"></script>
 	</body>
 	</html>
 	<?php

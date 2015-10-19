@@ -16,9 +16,20 @@
 	<?php endif; ?>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
 	<?php wp_head(); ?>
         <!-- Stylesheets web-widget -->
         <link rel="stylesheet" type="text/css" media="all" href="/web-widget/assets/web-widget.min.css"/>
+
+<link rel="stylesheet" type="text/css" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css"/>
+<link rel="stylesheet" type="text/css" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.css"/>
+
 </head>
 
 <body itemtype="http://schema.org/WebPage" itemscope="itemscope" <?php body_class(); ?>>
@@ -32,7 +43,10 @@
 		</div><!-- .inside-header -->
 	</header><!-- #masthead -->
 	<?php do_action( 'generate_after_header' ); ?>
-	
+	<?php if (is_front_page()){
+		echo do_shortcode("[huge_it_slider id='1']");
+	      } ?>
 	<div id="page" class="hfeed site grid-container container grid-parent">
+	
 		<div id="content" class="site-content">
 			<?php do_action('generate_inside_container'); ?>
